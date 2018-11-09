@@ -1,0 +1,22 @@
+@font-face{src:url('fonts/Oswald-Medium.ttf');font-family: 'Oswald-Medium'}
+@font-face{src:url('fonts/Raleway-Regular.ttf');font-family: 'Raleway-Regular'}
+@font-face{src:url('fonts/Poppins-ExtraBold.ttf');font-family: 'Poppins-extrabold'}
+@font-face{src:url('fonts/Poppins-Medium.ttf');font-family: 'Poppins-medium'}
+
+:root{
+    --stand-color:#3F3F3F
+}
+
+body{font-size: 62.5%;overflow-x: hidden;}
+img{max-width: 100%;}
+
+/* communs */
+p,a,span,input,li,label{font-family: 'Raleway-Regular',sans-serif; font-size: 1rem;color: var(--stand-color); }
+a.smal {font-size: .7rem;color: #4c5775;text-decoration: underline;cursor: pointer;}
+.container {    max-width: 1200px;margin: 0 auto;width: 90%;padding: 1rem;}
+.flex{display: flex; align-items: flex-start; }
+.extremos {justify-content: space-between;}
+.relative{position: relative}
+.wrap{flex-wrap: wrap}
+.center{text-align: center;}
+.flex.center{align-items: center}

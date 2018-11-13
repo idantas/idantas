@@ -35,7 +35,7 @@
   }
   ,
   {
-    "titulo": "Tarantulla suit",
+    "titulo": "Tarantulla suite",
     "resumo": "To extract and collect data from social network. A smart crawler & scraping enabled with Pentaho integration.",
     "ano": 2012,
     "repositorio":"http://github.com/oncase/tarantula",

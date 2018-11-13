@@ -69,7 +69,9 @@ function setTools(obj) {
             resumo = document.createElement('p'),
             boxLinks = document.createElement('div'),
             repo = document.createElement('a'),
-            site = document.createElement('a');
+            site = document.createElement('a'),
+            wedo=document.createElement('a');
+
 
         // tags
         boxTags.classList.add('boxTags');
@@ -102,9 +104,17 @@ function setTools(obj) {
         site.target='_blank';
         site.classList.add('site');
         boxLinks.appendChild(site);
+        boxLinks.appendChild(wedo);
+
+        // enviar interesse
+        wedo.innerHTML=' 🖐 We it do for your';
+        wedo.classList.add('link');
+        wedo.setAttribute('data-toolName',obj[x].titulo);
+        wedo.onclick = function () {
+            sendInterest(this);            
+        }
 
         boxLinks.classList.add('boxLinks');
-
     
         tool.appendChild(boxTags);
         tool.appendChild(title);
@@ -152,3 +162,12 @@ function applyFilter(obj) {
         addClass(elem,'ativo',true)
     }
 }
+
+function sendInterest(obj){
+    var modal= document.querySelector('.modal'),
+        inputTool=document.getElementById('tool');
+    
+    inputTool.setAttribute('value',obj.getAttribute('data-toolName'));
+    modal.classList.add('ativo');
+}
+

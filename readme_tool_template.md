@@ -1,4 +1,4 @@
-![Name tool: a module for Twitter data extraction](./toolkit_header.png)
+![Name tool: a module for Twitter data extraction](./img/toolkit_header.png)
 
 ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/Django.svg?style=for-the-badge) 
 ![LINUX](https://img.shields.io/badge/PLATFORM-LINUX-blue.svg?style=for-the-badge) 

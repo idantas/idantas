@@ -14,12 +14,20 @@
     <meta name="description" content="The place where all the fun is happening.">
     <script src="particles/particles.min.js"></script>
 
-    <script>    
-        if(window.location.href.split('=')[1] == '#1'){
+    <script>
+        if (window.location.href.split('=')[1] == '#1') {
             alert("Thank you for interest. We'll get back to you soon!");
         }   
     </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-121173044-4"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
+        gtag('config', 'UA-121173044-4');
+    </script>
 </head>
 
 <body>
@@ -49,15 +57,15 @@
 
 
     <footer>
-        <h2 class="grey subtitle">Big Data and Analytics questions? Get in touch <a href="https://www.oncase.com.br//contato"
-                title="powered by oncase" target="_blank">onca.se</a></h2>
+        <h2 class="grey subtitle">Big Data and Analytics questions? Get in touch <a
+                href="https://www.oncase.com.br//contato" title="powered by oncase" target="_blank">onca.se</a></h2>
 
         <a href="https://www.oncase.com.br/" class="micro" target="_blank">Made with ❤️ Oncase</a>
     </footer>
 
     <script src="fun.js"></script>
     <script>particlesJS.load('particles-js', 'particles/particlesjs-config.json', function () { });</script>
-    
+
     <!-- Smartlook -->
     <script type="text/javascript">
         window.smartlook || (function (d) {
@@ -67,7 +75,7 @@
         })(document);
         smartlook('init', 'b07cb5f9e3d71608af77ee78829f928a56cc021f');
     </script>
-    
+
 
     <!-- modal de mensagem -->
 
@@ -96,17 +104,17 @@
                 Please, let us to know more about you and your business
                 <textarea name="message" rows="5" placeholder="Tell us something"></textarea>
             </label>
-            
-            <input type="submit" value="Send message"  onclick="retornoMsg(this)">
-            
+
+            <input type="submit" value="Send message" onclick="retornoMsg(this)">
+
         </form>
     </div>
 
-    <script>function fecharModal(obj){
+    <script>function fecharModal(obj) {
             obj.closest('.modal').classList.remove('ativo');
         }
-        
-        </script>
+
+    </script>
 </body>
 
 
